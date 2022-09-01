@@ -1,0 +1,25 @@
+{
+    "name": "aaaaaaaa",
+    "description": "aaaaaaaaaaaaaa",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "html/popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://github.com/"
+            ],
+            "js": [
+                "js/main.js"
+            ],
+            "css": [
+                "css/main.css"
+            ]
+        }
+    ]
+}
